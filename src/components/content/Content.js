@@ -41,21 +41,16 @@ const Content = () => {
               </p>
             </div>
 
-            {/* <div className="graphs-data"> */}
             <div className="cnt-display">
               <div className="cnt-doc">
-                <FaUserDoctor
-                  className="docs-icon"
-                />
+                <FaUserDoctor className="docs-icon1" />
                 <div className="cnt-count">
                   <p className="cnt-ttl">Total Doctors</p>
                   <p className="cnt-num">15,000+</p>
                 </div>
               </div>
               <div className="cnt-pat">
-                <BsFillPersonFill
-                  className="docs-icon"
-                />
+                <BsFillPersonFill className="docs-icon2" />
                 <div className="cnt-count">
                   <p className="cnt-ttl">Total Patients</p>
                   <p className="cnt-num">15+ Lakh</p>
@@ -66,48 +61,46 @@ const Content = () => {
             <div className="graphdiv">
               <img src={graphs} alt="graphs" className="cnt-graphs" />
             </div>
-            {/* </div> */}
           </div>
         </div>
-        {/* <div className="cnt-right"> */}
         <img src={cards} alt="notifications" className="cnt-card cnt-right" />
         <img
           src={responsive}
           alt="notifications"
           className="cnt-card cnt-right-res"
         />
-
-        {/* </div> */}
       </div>
 
       <div className="cnt-main-res">
         <div className="cnt-left-res">
-          <div className="res-loc">
-            <FaLocationCrosshairs
-              className="loc-icon"
-              style={{ color: "E4C17F", fontSize: "20px" }}
-            />
-            <h4 style={{ color: "#ffff", margin: "0px" }}>Delhi</h4>
-            <RiArrowDropDownLine
-              className="loc-drop"
-              style={{ color: "#fff", fontSize: "30px" }}
-            />
+          <div className="loc-search">
+            <div className="res-loc">
+              <FaLocationCrosshairs
+                className="loc-icon"
+                style={{ color: "E4C17F", fontSize: "20px" }}
+              />
+              <h4 style={{ color: "#ffff", margin: "0px" }}>Delhi</h4>
+              <i class="arrow down"></i>
+              {/* <RiArrowDropDownLine
+                className="loc-drop"
+                style={{ color: "#fff", fontSize: "30px" }}
+              /> */}
+            </div>
+            <div class="search-container-res">
+              <input
+                type="text"
+                placeholder="Search doctor"
+                name="search"
+                className="src-input"
+              />
+              <IoSearch className="src-icon-res" />
+            </div>
           </div>
-          <div class="search-container-res">
-            <input
-              type="text"
-              placeholder="Search doctor"
-              name="search"
-              className="src-input"
-            />
-            <IoSearch className="src-icon-res" />
-          </div>
-
           <div className="graphs-data-res">
             <div className="cnt-display-res">
               <div className="cnt-doc-res">
                 <FaUserDoctor
-                  className="doc-icon"
+                  className="doc-icon1"
                   style={{ color: "E957C9", fontSize: "24px" }}
                 />
                 <div className="cnt-count-res">
@@ -117,7 +110,7 @@ const Content = () => {
               </div>
               <div className="cnt-pat-res">
                 <BsFillPersonFill
-                  className="doc-icon"
+                  className="doc-icon2"
                   style={{ color: "E957C9", fontSize: "28px" }}
                 />
                 <div className="cnt-count-res">

@@ -6,19 +6,21 @@ import { FiTwitter } from "react-icons/fi";
 import line from "../../assets/curves.svg";
 import resline from "../../assets/res_curves.svg";
 
-
 const footer = () => {
   return (
     <div className="ft-main">
       <div className="ft-top">
         <div className="ft-left">
           <img src={footerlogo} alt="greoilc" className="ft-logo" />
-          <p className="ft-det">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
-            turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
-            nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
-            tellus elit sed risus.
-          </p>
+          <div className="ftr-company-ttl">
+            <h3 className="ftr-cpny">Company</h3>
+            <p className="ft-det">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu
+              turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus
+              nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum
+              tellus elit sed risus.
+            </p>
+          </div>
           <div className="ft-scl">
             <FaInstagram className="ins-logo" />
             <FiTwitter className="twt-logo" />

@@ -13,6 +13,9 @@
   flex-direction: column;
   gap: 30px;
 }
+.ftr-cpny {
+  display: none;
+}
 .ft-main {
   background: #e7c985;
   border-radius: 0 100px 0 0;
@@ -77,11 +80,12 @@ h2 {
   font-weight: 600;
   margin: 0;
 }
-.res-curves{
+.res-curves {
   display: none;
 }
- .curves{
+.curves {
   display: block;
+  width: 80%;
 }
 /* media query for other devices */
 @media only screen and (max-width: 767px) {
@@ -90,12 +94,27 @@ h2 {
     padding: 40px 50px;
     gap: 10px;
   }
+  .ftr-company-ttl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .ftr-cpny {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #352e60;
+    margin: 0;
+    padding: 0;
+  }
   .ft-logo {
     display: none;
   }
   .ft-det {
     font-size: 12px;
     text-align: center;
+    margin: 0;
   }
   .ft-top {
     flex-direction: column;
@@ -119,33 +138,32 @@ h2 {
     padding: 50px 0;
     align-items: center;
   }
-  .curves{
-  display: none;
-}
-.res-curves{
-  display: block;
-}
-.ft-left {
+  .curves {
+    display: none;
+  }
+  .res-curves {
+    display: block;
+  }
+  .ft-left {
     align-items: center;
-}
-.ft-left, .ft-right {
-    width:100%;
-}
-
+  }
+  .ft-left,
+  .ft-right {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-
   .ft-main {
     padding: 20px 40px;
   }
-.res-curves{
-  display: none;
-}
+  .res-curves {
+    display: none;
+  }
   .ft-top {
     gap: 50px;
   }
-  .ft-left{
+  .ft-left {
     align-items: center;
   }
 }
