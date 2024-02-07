@@ -1,13 +1,18 @@
 .cnt-main {
   background-image: url("../../assets/background.png");
   background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 80px 10px 80px;
+/* background: #372f62;
+  border-radius: 0 0 100px 0;
+   background-image: radial-gradient(red, green, blue); */
 }
+
+
 .cnt-right-res {
   display: none;
 }

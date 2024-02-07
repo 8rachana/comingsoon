@@ -11,16 +11,17 @@ import responsive from "../../assets/cardsresponsive.png";
 const Content = () => {
   return (
     <div className="cnt-main">
+      {/* <img src={Background} /> */}
       <div className="cnt-left">
-          <div class="search-container">
-            <input
-              type="text"
-              placeholder="Search doctor"
-              name="search"
-              className="src-input"
-            />
-            <IoSearch className="src-icon" />
-          </div>
+        <div class="search-container">
+          <input
+            type="text"
+            placeholder="Search doctor"
+            name="search"
+            className="src-input"
+          />
+          <IoSearch className="src-icon" />
+        </div>
         <div className="text-paragraph">
           <div className="src-paragraph">
             <p className="src-text1">
