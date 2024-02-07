@@ -277,8 +277,7 @@
     display: flex;
     align-items: center;
     margin: 0;
-    box-shadow: rgb(29 28 28 / 40%) 0px 0px 10px 0px inset,
-      rgb(95 92 92 / 5%) 0px 10px 10px 0px;
+     box-shadow: inset -5px -5px 10px #403672, inset 5px 5px 10px #2d2653;
     border-radius: 50px;
     text-align: left;
   }

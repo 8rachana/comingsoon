@@ -81,10 +81,7 @@ const Content = () => {
               />
               <h4 style={{ color: "#ffff", margin: "0px" }}>Delhi</h4>
               <i class="arrow down"></i>
-              {/* <RiArrowDropDownLine
-                className="loc-drop"
-                style={{ color: "#fff", fontSize: "30px" }}
-              /> */}
+             
             </div>
             <div class="search-container-res">
               <input
