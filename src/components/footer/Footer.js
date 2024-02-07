@@ -1,9 +1,12 @@
 import React from "react";
 import "./Footer.css";
-import footerlogo from "../../assets/ftr_logo.png";
+import footerlogo from "../../assets/ftr_logo.svg";
 import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
-import line from "../../assets/curves.png";
+import line from "../../assets/curves.svg";
+import resline from "../../assets/res_curves.svg";
+
+
 const footer = () => {
   return (
     <div className="ft-main">
@@ -23,7 +26,9 @@ const footer = () => {
           </div>
         </div>
         <div className="ft-right">
-          <img src={line} />
+          <img src={line} className="curves" />
+          <img src={resline} className="res-curves" />
+
           <div className="ft-grid">
             <h2>Home</h2>
             <h2>Booking</h2>

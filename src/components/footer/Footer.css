@@ -73,12 +73,16 @@ h2 {
 }
 .ft-cpy {
   color: #372f62;
-  /* font-family: "League Spartan", sans-serif; */
   font-size: 18px;
   font-weight: 600;
   margin: 0;
 }
-
+.res-curves{
+  display: none;
+}
+ .curves{
+  display: block;
+}
 /* media query for other devices */
 @media only screen and (max-width: 767px) {
   .ft-main {
@@ -113,7 +117,21 @@ h2 {
 
   .ft-right {
     padding: 50px 0;
+    align-items: center;
   }
+  .curves{
+  display: none;
+}
+.res-curves{
+  display: block;
+}
+.ft-left {
+    align-items: center;
+}
+.ft-left, .ft-right {
+    width:100%;
+}
+
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -121,7 +139,9 @@ h2 {
   .ft-main {
     padding: 20px 40px;
   }
-
+.res-curves{
+  display: none;
+}
   .ft-top {
     gap: 50px;
   }
