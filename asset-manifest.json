@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/comingsoon/static/css/main.f0db9bdf.css",
+    "main.css": "/comingsoon/static/css/main.c4ba4c16.css",
     "main.js": "/comingsoon/static/js/main.9ceb7871.js",
     "static/js/592.c872cef7.chunk.js": "/comingsoon/static/js/592.c872cef7.chunk.js",
     "static/media/cards.svg": "/comingsoon/static/media/cards.dad358157b3c21597563136859d19067.svg",
@@ -14,12 +14,12 @@
     "static/media/curves.svg": "/comingsoon/static/media/curves.0ba59a96603ffd29fff3eaf61ffcd47f.svg",
     "index.html": "/comingsoon/index.html",
     "static/media/res_curves.svg": "/comingsoon/static/media/res_curves.2b493f8893a61133201d756b34389072.svg",
-    "main.f0db9bdf.css.map": "/comingsoon/static/css/main.f0db9bdf.css.map",
+    "main.c4ba4c16.css.map": "/comingsoon/static/css/main.c4ba4c16.css.map",
     "main.9ceb7871.js.map": "/comingsoon/static/js/main.9ceb7871.js.map",
     "592.c872cef7.chunk.js.map": "/comingsoon/static/js/592.c872cef7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0db9bdf.css",
+    "static/css/main.c4ba4c16.css",
     "static/js/main.9ceb7871.js"
   ]
 }
