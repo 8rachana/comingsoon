@@ -75,21 +75,6 @@
     align-items: center;
   }
 
-  .hd-hamburger.open .hd-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hd-hamburger.open .hd-line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hd-hamburger.open .hd-line:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -6px);
-  }
-  .hd-line:first-child,
-  .hd-line:last-child {
-    width: 15px;
-  }
   .hd-menu.open {
     display: flex;
     flex-direction: column;
@@ -108,5 +93,11 @@
     height: 130px;
     width: 300px;
     display: block;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .hd-main {
+    padding: 10px 40px;
   }
 }

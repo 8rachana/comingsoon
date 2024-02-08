@@ -9,7 +9,6 @@ import { BsFillPersonFill } from "react-icons/bs";
 import responsive from "../../assets/cardsresponsive.svg";
 import reslogo from "../../assets/reslogo.svg";
 import { FaLocationCrosshairs } from "react-icons/fa6";
-import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Content = () => {
   return (
