@@ -5,7 +5,7 @@ import { BiClinic } from "react-icons/bi";
 import { MdOutlinePhone } from "react-icons/md";
 import { BsCameraVideo } from "react-icons/bs";
 import { RiHome2Line } from "react-icons/ri";
-import formimage from "../../assets/formimage.svg";
+import formimage from "../../assets/formimage2.png";
 
 const Booking = () => {
   const [inputs, setInputs] = useState({});
