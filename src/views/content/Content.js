@@ -59,8 +59,8 @@ const Content = () => {
             </div>
 
             <div className="graphdiv">
-              <img src={graphs} alt="graphs" className="cnt-graphs" />
-              {/* <statsChart */}
+              {/* <img src={graphs} alt="graphs" className="cnt-graphs" /> */}
+              <Statchart />
             </div>
           </div>
         </div>
@@ -117,7 +117,8 @@ const Content = () => {
               </div>
             </div>
             <div className="graphdiv-res">
-              <img src={graphs} alt="graphs" className="cnt-graphs-res" />
+              {/* <img src={graphs} alt="graphs" className="cnt-graphs-res" /> */}
+              <Statchart />
             </div>
           </div>
         </div>

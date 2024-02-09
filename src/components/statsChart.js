@@ -8,6 +8,7 @@ import {
   ResponsiveContainer,
   Bar,
 } from "recharts";
+// import "@fontsource/league-spartan";
 
 const data = [
   { name: "A", value: 40, color: "#E6AD6D" },
