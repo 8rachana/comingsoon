@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/comingsoon/static/css/main.2d84b384.css",
-    "main.js": "/comingsoon/static/js/main.f01c3bbb.js",
+    "main.css": "/comingsoon/static/css/main.7d2ec00a.css",
+    "main.js": "/comingsoon/static/js/main.e5d4be8c.js",
     "static/js/592.c872cef7.chunk.js": "/comingsoon/static/js/592.c872cef7.chunk.js",
     "static/media/cards.svg": "/comingsoon/static/media/cards.dad358157b3c21597563136859d19067.svg",
     "static/media/cardsresponsive.svg": "/comingsoon/static/media/cardsresponsive.9fb2a21e56392fb4d882064fd4a6d9af.svg",
@@ -14,13 +14,14 @@
     "static/media/background.svg": "/comingsoon/static/media/background.0a4048aebc8839142ba71ce4cfe61bc3.svg",
     "static/media/curves.svg": "/comingsoon/static/media/curves.0ba59a96603ffd29fff3eaf61ffcd47f.svg",
     "index.html": "/comingsoon/index.html",
+    "static/media/pinkstar.svg": "/comingsoon/static/media/pinkstar.47ad30f7a413336dc5895514a9f80273.svg",
     "static/media/res_curves.svg": "/comingsoon/static/media/res_curves.2b493f8893a61133201d756b34389072.svg",
-    "main.2d84b384.css.map": "/comingsoon/static/css/main.2d84b384.css.map",
-    "main.f01c3bbb.js.map": "/comingsoon/static/js/main.f01c3bbb.js.map",
+    "main.7d2ec00a.css.map": "/comingsoon/static/css/main.7d2ec00a.css.map",
+    "main.e5d4be8c.js.map": "/comingsoon/static/js/main.e5d4be8c.js.map",
     "592.c872cef7.chunk.js.map": "/comingsoon/static/js/592.c872cef7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d84b384.css",
-    "static/js/main.f01c3bbb.js"
+    "static/css/main.7d2ec00a.css",
+    "static/js/main.e5d4be8c.js"
   ]
 }
