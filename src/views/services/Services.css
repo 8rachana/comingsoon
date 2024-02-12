@@ -1,5 +1,9 @@
+.ser-main {
+  display: none;
+}
 @media only screen and (max-width: 767px) {
   .ser-main {
+    display: block;
     padding-bottom: 30px;
   }
   .ser-top {

@@ -10,7 +10,7 @@ import person from "../../assets/person.png";
 
 const Specialists = () => {
   return (
-    <div>
+    <div className="spec-main">
       <div className="spec-one">
         <div className="spec-ttl">
           <p className="spec-ttl1">Our Specialists</p>
@@ -73,7 +73,7 @@ const Specialists = () => {
           </div>
           <div className="rev-customers">
             <img className="cus-img" src={person} />
-            <div>
+            <div className="cust-detail">
               <p className="cust-name">Melvin Dennis</p>
               <ReactStars
                 count={5}
