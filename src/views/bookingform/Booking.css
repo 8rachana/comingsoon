@@ -3,7 +3,7 @@
 }
 @media only screen and (max-width: 767px) {
   .book-main {
-    display: flex;
+    display: none;
     flex-direction: column;
     background: #e7c985;
     border-radius: 0 50px 0 0;

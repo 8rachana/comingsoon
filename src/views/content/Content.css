@@ -182,7 +182,7 @@
     top: -1px;
   }
   .cnt-right-res {
-    display: flex;
+    display: none;
     flex-direction: column;
   }
 
