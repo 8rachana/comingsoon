@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Specialists.css";
 import boy from "../../assets/boy.svg";
 import medicine from "../../assets/medicine.svg";
@@ -7,26 +7,101 @@ import { FaAward, FaTooth } from "react-icons/fa6";
 import { PiHeadsetFill } from "react-icons/pi";
 import ReactStars from "react-rating-stars-component";
 import person from "../../assets/person.png";
+import Pagination from "../../components/Pagination";
 
 const Specialists = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const doctorList = [
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+    {
+      name: "Dr. Julie Smith",
+      specialty: "Dental Surgeon",
+      image: person,
+    },
+  ];
+
+  const [doctorsPerPage] = useState(3);
+  const totalDoctors = doctorList.length;
+
+  useEffect(() => {
+    const totalPages = Math.ceil(totalDoctors / doctorsPerPage);
+    setTotalPages(totalPages);
+  }, [totalDoctors, doctorsPerPage]);
+
+  const handleScroll = (e) => {
+    const bottom =
+      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
+    if (bottom && currentPage < totalPages) {
+      setCurrentPage((prevPage) => prevPage + 1);
+    }
+  };
+ const handlePageChange = (newPage) => {
+   setCurrentPage(newPage);
+ };
+  const startIndex = (currentPage - 1) * doctorsPerPage;
+  const endIndex = Math.min(startIndex + doctorsPerPage, totalDoctors);
+  const displayedDoctors = doctorList.slice(startIndex, endIndex);
+
   return (
     <div className="spec-main">
       <div className="spec-one">
         <div className="spec-ttl">
           <p className="spec-ttl1">Our Specialists</p>
-          <p className="spec-page">1/3</p>
+          <p className="spec-page">
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={handlePageChange}
+            />
+          </p>
         </div>
-        <div className="spec-doclist">
-          <div className="spec-doc">
-            <img src={person} className="spec-img" />
-            <p className="spec-docname">Dr. Julie Smith</p>
-            <p className="spec-docspec">Dental Sergeon</p>
-          </div>
-          <div className="spec-doc">
-            <img src={person} className="spec-img" />
-            <p className="spec-docname">Dr. Julie Smith</p>
-            <p className="spec-docspec">Dental Sergeon</p>
-          </div>
+        <div className="spec-doclist" onScroll={handleScroll}>
+          {displayedDoctors.map((doctor, index) => (
+            <div className="spec-doc" key={index}>
+              <img
+                src={doctor.image}
+                className="spec-img"
+                alt={`Dr. ${doctor.name}`}
+              />
+              <p className="spec-docname">{doctor.name}</p>
+              <p className="spec-docspec">{doctor.specialty}</p>
+            </div>
+          ))}
         </div>
       </div>
       <div className="spec-two">

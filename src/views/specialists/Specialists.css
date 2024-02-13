@@ -33,6 +33,13 @@
   .spec-doclist {
     display: flex;
     gap: 20px;
+    overflow-y: auto;
+    max-height: 300px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .spec-doclist::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome/Safari */
   }
   .spec-doc {
     display: flex;

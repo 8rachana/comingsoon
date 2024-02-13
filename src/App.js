@@ -7,6 +7,7 @@ import Booking from "./views/bookingform/Booking";
 import TopAdvertisement from "./components/TopAdvertisement";
 import Services from "./views/services/Services";
 import Specialists from "./views/specialists/Specialists";
+import Availability from "./views/availability/Availability";
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Content />
       <Services />
       <Specialists />
+      <Availability />
       <Footer />
     </div>
   );

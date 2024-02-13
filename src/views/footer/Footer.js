@@ -5,6 +5,7 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
 import line from "../../assets/curves.svg";
 import resline from "../../assets/res_curves.svg";
+import rescurve from '../../assets/rescurve2.svg'
 
 const footer = () => {
   return (
@@ -22,15 +23,14 @@ const footer = () => {
             </p>
           </div>
           <div className="ft-scl">
+            <img src={line} className="curves" />
+            <img src={rescurve} className="res-curves" />
             <FaInstagram className="ins-logo" />
             <FiTwitter className="twt-logo" />
             <FaFacebookF className="fbk-logo" />
           </div>
         </div>
         <div className="ft-right">
-          <img src={line} className="curves" />
-          <img src={resline} className="res-curves" />
-
           <div className="ft-grid">
             <h2>Home</h2>
             <h2>Booking</h2>
@@ -40,12 +40,11 @@ const footer = () => {
             <h2>Insurance</h2>
           </div>
         </div>
-      </div>
-      <div>
         <p className="ft-detail">
           About Us | Privacy Policy | Terms of Conditions
         </p>
-        <hr style={{ border: "1px solid white" }} />
+      </div>
+      <div className="ftr-bottom">
         <p className="ft-cpy">Copywrite 2022. All rights reserved.</p>
       </div>
     </div>
