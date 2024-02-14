@@ -66,16 +66,18 @@
   .avail-licicon3,
   .avail-arrow {
     color: #fff;
+    font-size: 20px;
+
   }
-  .avail-licicon1 {
+  /* .avail-licicon1 {
     font-size: 18px;
-  }
-  .avail-licicon {
+  } */
+  /* .avail-licicon {
     font-size: 14px;
-  }
-  .avail-licicon3 {
+  } */
+  /* .avail-licicon3 {
     font-size: 18px;
-  }
+  } */
   .avail-form-cnt input:focus-visible {
     outline: none;
   }
