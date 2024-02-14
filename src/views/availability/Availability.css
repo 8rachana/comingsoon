@@ -6,19 +6,7 @@
     display: flex;
     flex-direction: column;
   }
-  .help-main {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px 20px 30px 20px;
-    background: #ffcff5;
-  }
-  .help-ttl {
-    color: #c478b4;
-    font-size: 20px;
-    font-weight: 600;
-    margin: 0;
-  }
+  
   .avail-icon {
     width: 80%;
   }
@@ -28,15 +16,7 @@
     font-weight: 600;
     margin: 0;
   }
-  .help-groups {
-    display: flex;
-  }
-  .help-ic-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  }
+  
   .avail-main {
     background: #372f62;
     display: flex;
@@ -79,6 +59,7 @@
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+    width: -webkit-fill-available;
   }
   .avail-licicon1,
   .avail-licicon2,
@@ -102,6 +83,7 @@
     background: none;
     border: none;
     color: #fff;
+    flex-grow: 1; 
   }
   .avail-form-cnt input::placeholder {
     background: none;
@@ -117,7 +99,32 @@
     font-weight: 700;
     font-size: 16px;
     background: linear-gradient(to right, #e8d48f, #e48e51);
-    width: 96%;
+    width:-webkit-fill-available;
+    flex-grow: 1; /* Make the button grow to fill the available space */
+  /* max-width: 200px; */
+  }
+
+  .help-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px 30px 20px;
+    background: #ffcff5;
+  }
+  .help-ttl {
+    color: #c478b4;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .help-groups {
+    display: flex;
+  }
+  .help-ic-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
   .download-main {
     display: flex;

@@ -5,7 +5,11 @@
   .ser-main {
     display: block;
     padding-bottom: 30px;
+    /* background-color: #fff; */
+    /* border-bottom-left-radius: 50%; 
+    border-bottom-right-radius: 50%; */
   }
+
   .ser-top {
     display: flex;
     align-items: center;
@@ -27,8 +31,8 @@
   }
   .ser-page {
     color: #e957c9;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
   }
   .ser-icttl {
     display: flex;
@@ -51,12 +55,19 @@
     color: #372f62;
     font-size: 20px;
     font-weight: bold;
+    white-space: nowrap;
   }
 
   .image {
     width: 130px;
     height: 40px;
-
+    border-radius: 100px;
+    transition: width 0.3s ease;
+  }
+  .image1 {
+    width: 130px;
+    height: 40px;
+    border-radius: 100px;
     transition: width 0.3s ease;
   }
 
@@ -74,7 +85,9 @@
   }
 
   .container.ser-active .image {
-    width: 50vw;
+    /* width: 50vw; */
+    height: auto;
+    border-radius: 20px;
   }
   .bk-btn {
     padding: 30px 50px;
@@ -84,5 +97,6 @@
     font-size: 22px;
     font-weight: bold;
     border-radius: 50%;
+    margin: 20px;
   }
 }

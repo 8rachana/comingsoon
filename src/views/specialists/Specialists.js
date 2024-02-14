@@ -12,70 +12,104 @@ import Pagination from "../../components/Pagination";
 const Specialists = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(1);
-  const doctorList = [
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-    {
-      name: "Dr. Julie Smith",
-      specialty: "Dental Surgeon",
-      image: person,
-    },
-  ];
-
-  const [doctorsPerPage] = useState(3);
-  const totalDoctors = doctorList.length;
+  const [currentPage2, setCurrentPage2] = useState(1);
+  const [totalPages2, setTotalPages2] = useState(1);
+  const [displayedDoctors, setDisplayedDoctors] = useState([]);
 
   useEffect(() => {
-    const totalPages = Math.ceil(totalDoctors / doctorsPerPage);
-    setTotalPages(totalPages);
-  }, [totalDoctors, doctorsPerPage]);
+    const doctorList = [
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+      {
+        name: "Dr. Julie Smith",
+        specialty: "Dental Surgeon",
+        image: person,
+      },
+    ];
+    setDisplayedDoctors(doctorList);
+  }, []);
 
-  const handleScroll = (e) => {
-    const bottom =
-      e.target.scrollHeight - e.target.scrollTop === e.target.clientHeight;
-    if (bottom && currentPage < totalPages) {
-      setCurrentPage((prevPage) => prevPage + 1);
-    }
+  // DOCTORS
+  useEffect(() => {
+    const itemsPerPage = 2;
+    const totalItems = displayedDoctors.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    setTotalPages(totalPages);
+  }, [displayedDoctors]);
+
+  const handleScroll = (event) => {
+    const container = event.target;
+    const containerWidth = container.offsetWidth;
+    const scrollLeft = container.scrollLeft;
+    const totalWidth = container.scrollWidth;
+    const currentPage = Math.ceil(
+      (scrollLeft + containerWidth) / containerWidth
+    );
+    setCurrentPage(currentPage);
   };
- const handlePageChange = (newPage) => {
-   setCurrentPage(newPage);
- };
-  const startIndex = (currentPage - 1) * doctorsPerPage;
-  const endIndex = Math.min(startIndex + doctorsPerPage, totalDoctors);
-  const displayedDoctors = doctorList.slice(startIndex, endIndex);
+
+  // REVIEWS
+  useEffect(() => {
+    const itemsPerPage = 2;
+    const totalItems = displayedDoctors.length;
+    const totalPages = Math.ceil(totalItems / itemsPerPage);
+    setTotalPages(totalPages2);
+  }, []);
+    const handleScroll2 = (event) => {
+      const container = event.target;
+      const containerWidth = container.offsetWidth;
+      const scrollLeft = container.scrollLeft;
+      const totalWidth = container.scrollWidth;
+      const currentPage = Math.ceil(
+        (scrollLeft + containerWidth) / containerWidth
+      );
+      setCurrentPage2(currentPage2);
+    };
+  const fetchDoctorsForPage = async (page) => {};
+
+  // const handlePageChange = async (newPage) => {
+  //   try {
+  //     const data = await fetchDoctorsForPage(newPage);
+  //     setDisplayedDoctors(data);
+  //     setCurrentPage(newPage);
+  //   } catch (error) {
+  //     // Handle errors
+  //     console.error("Error handling page change:", error);
+  //   }
+  // };
 
   return (
     <div className="spec-main">
@@ -86,7 +120,9 @@ const Specialists = () => {
             <Pagination
               currentPage={currentPage}
               totalPages={totalPages}
-              onPageChange={handlePageChange}
+              // onPageChange={handlePageChange}
+              dotActiveColor="#fff"
+              dotInactiveColor="#d3b36c"
             />
           </p>
         </div>
@@ -144,7 +180,15 @@ const Specialists = () => {
         <div className="reviews">
           <div className="rev-ttl">
             <p className="rev-ttl1">1800+ Reviews</p>
-            <p className="rev-ttl2">1/3</p>
+            <p className="rev-ttl2">
+              <Pagination
+                currentPage={currentPage2}
+                totalPages={totalPages2}
+                // onPageChange={handlePageChange}
+                dotActiveColor="#E957C9"
+                dotInactiveColor="#DDDDDD"
+              />
+            </p>
           </div>
           <div className="rev-customers">
             <img className="cus-img" src={person} />

@@ -64,8 +64,8 @@
 
   .ham-opn,
   .ham-cls {
-    font-size: 30px;
-    color: white;
+    font-size: 24px;
+    color: #e4c17f;
     cursor: pointer;
   }
   .hd-hamburger {
@@ -73,6 +73,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: -5px -5px 10px 0 #403672, 5px 5px 10px 0 #2d2653;
+    padding: 6px 14px;
+    border-radius: 20px;
   }
 
   .hd-menu.open {

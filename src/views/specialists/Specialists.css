@@ -3,8 +3,19 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .paginationdot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #d3b36c;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+
   .spec-main {
     display: block;
+    border-radius: 50% 50% 0 0;
   }
 
   .spec-one {
@@ -182,7 +193,7 @@
   }
   .rev-ttl2 {
     color: #372f62;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 10px;
     color: #e957c9;
