@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/comingsoon/static/css/main.b847daa6.css",
+    "main.css": "/comingsoon/static/css/main.30f383c1.css",
     "main.js": "/comingsoon/static/js/main.cff92223.js",
     "static/js/592.c872cef7.chunk.js": "/comingsoon/static/js/592.c872cef7.chunk.js",
     "static/media/teeth.png": "/comingsoon/static/media/teeth.9fc58af848ae66bc90e0.png",
@@ -29,12 +29,12 @@
     "static/media/rescurve2.svg": "/comingsoon/static/media/rescurve2.ea7171dfdbdb9ca930c25c182c354982.svg",
     "static/media/pinkstar.svg": "/comingsoon/static/media/pinkstar.47ad30f7a413336dc5895514a9f80273.svg",
     "static/media/res_curves.svg": "/comingsoon/static/media/res_curves.2b493f8893a61133201d756b34389072.svg",
-    "main.b847daa6.css.map": "/comingsoon/static/css/main.b847daa6.css.map",
+    "main.30f383c1.css.map": "/comingsoon/static/css/main.30f383c1.css.map",
     "main.cff92223.js.map": "/comingsoon/static/js/main.cff92223.js.map",
     "592.c872cef7.chunk.js.map": "/comingsoon/static/js/592.c872cef7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b847daa6.css",
+    "static/css/main.30f383c1.css",
     "static/js/main.cff92223.js"
   ]
 }
